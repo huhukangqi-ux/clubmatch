@@ -1,0 +1,4 @@
+# Netlify：连接仓库后，将「发布目录」设为 web（或把本文件所在目录作为站点根）
+[build]
+  publish = "."
+  command = ""

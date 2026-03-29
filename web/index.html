@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>ClubMatch — 社团匹配 MVP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Noto+Sans+SC:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div id="app" class="app-shell">
+      <header class="top-bar">
+        <span class="logo">ClubMatch</span>
+        <span class="top-sub">校园招新 · MVP 演示</span>
+      </header>
+
+      <main class="main-view" id="main-view"></main>
+
+      <nav class="tab-bar" aria-label="主导航">
+        <button type="button" class="tab-btn is-active" data-tab="match" aria-current="page">
+          <span class="tab-icon" aria-hidden="true">◇</span>
+          <span>匹配</span>
+        </button>
+        <button type="button" class="tab-btn" data-tab="feed">
+          <span class="tab-icon" aria-hidden="true">◎</span>
+          <span>发现</span>
+        </button>
+        <button type="button" class="tab-btn" data-tab="chat">
+          <span class="tab-icon" aria-hidden="true">💬</span>
+          <span>消息</span>
+        </button>
+        <button type="button" class="tab-btn" data-tab="me">
+          <span class="tab-icon" aria-hidden="true">◉</span>
+          <span>我的</span>
+        </button>
+      </nav>
+    </div>
+
+    <div id="modal-root"></div>
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+    <!-- 普通脚本顺序加载：支持 file:// 双击打开，无需本地服务器 -->
+    <script src="./js/data.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
